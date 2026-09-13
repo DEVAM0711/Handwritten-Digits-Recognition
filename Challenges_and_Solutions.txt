@@ -1,0 +1,97 @@
+# ⚠️ Challenges Faced
+
+1. Dataset Access
+
+### Challenge
+
+The originally provided project dataset download link was not accessible.
+
+### Solution
+
+The MNIST dataset was loaded directly through TensorFlow/Keras.
+
+---
+
+2. Image-Based Dataset
+
+### Challenge
+
+The data consists of 28 × 28 image arrays rather than traditional
+tabular features.
+
+### Solution
+
+The images were kept in their original 28 × 28 format for image analysis
+and visualization, while they were flattened into 784 features for
+traditional machine learning algorithms.
+
+---
+
+3. Pixel Scaling
+
+### Challenge
+
+Original pixel values ranged from 0 to 255.
+
+### Solution
+
+Pixel values were normalized to the range 0 to 1 by dividing by 255.
+
+---
+
+4. High Dimensionality
+
+### Challenge
+
+Each image contains 784 pixel features.
+
+### Solution
+
+The images were flattened into 784-dimensional vectors for traditional
+machine learning models.
+
+---
+
+5. Model Selection
+
+### Challenge
+
+Different classification algorithms produced different performance levels.
+
+### Solution
+
+Multiple models were trained and evaluated using accuracy, precision,
+recall, and F1-score.
+
+The Neural Network achieved the best overall performance.
+
+---
+
+6. Digit Misclassification
+
+### Challenge
+
+Some handwritten digits have similar shapes and can be difficult to
+distinguish.
+
+### Solution
+
+Misclassified images, confusion patterns, per-digit error rates, and
+prediction confidence were analyzed.
+
+---
+
+7. Custom Image Format
+
+### Challenge
+
+Custom handwritten images may have a different background/pixel orientation
+from MNIST images.
+
+### Solution
+
+A preprocessing pipeline was implemented to convert the image to grayscale,
+resize it to 28 × 28, normalize the pixels, and optionally invert the image
+to match the MNIST representation.
+
+---
